@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid #999;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #1f6391;
+        }
+        .media {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Ordered List with Roman Numerals -->
+    <h2>Ordered List (Roman Numerals)</h2>
+    <ol type="I">
+        <li>Introduction to HTML</li>
+        <li>Advanced Elements</li>
+        <li>Forms and Validation</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>External Image</h2>
+    <img src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg" alt="Example from Pexels" width="500">
+
+    <!-- Contacts Table -->
+    <h2>Contacts Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Mobile</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>John Doe</td><td>123 Main St</td><td>123-456-7890</td><td>john@example.com</td></tr>
+            <tr><td>Jane Smith</td><td>456 Elm St</td><td>234-567-8901</td><td>jane@example.com</td></tr>
+            <tr><td>Michael Lee</td><td>789 Oak St</td><td>345-678-9012</td><td>michael@example.com</td></tr>
+            <tr><td>Sara Kim</td><td>321 Pine St</td><td>456-789-0123</td><td>sara@example.com</td></tr>
+            <tr><td>David Jones</td><td>654 Cedar St</td><td>567-890-1234</td><td>david@example.com</td></tr>
+        </tbody>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <label for="country">Select Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Choose--</option>
+            <option value="za">South Africa</option>
+            <option value="ng">Nigeria</option>
+            <option value="gh">Ghana</option>
+        </select>
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+
+        <label>Skills:</label>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">JavaScript</label>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia Section -->
+    <div class="media">
+        <h2>Audio and Video</h2>
+        
+        <!-- Audio Player -->
+        <h3>Sample Audio</h3>
+        <audio controls>
+            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Video Player -->
+        <h3>Sample Video</h3>
+        <video width="500" controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</body>
+</html>
